@@ -25,6 +25,27 @@ const projects = ref([
 </script>
 
 <style scoped>
+.projects {
+  padding: 2rem;
+  background-color: #0f0f0f;
+  color: #e0e0e0;
+  font-family: 'Orbitron', sans-serif;
+  border: 2px solid #ff0055;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #ff0055;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #ff0055;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
 .project-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -32,8 +53,30 @@ const projects = ref([
 }
 
 .project {
-  border: 1px solid #ddd;
+  border: 2px solid #ff0055;
   padding: 1rem;
   border-radius: 8px;
+  background-color: #1a1a1a;
+  box-shadow: 0 0 10px #ff0055;
+}
+
+.project h3 {
+  color: #ff0055;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  color: #e0e0e0;
+  margin-bottom: 1rem;
+}
+
+.project a {
+  color: #ff0055;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 </style>
