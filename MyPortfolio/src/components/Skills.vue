@@ -1,4 +1,4 @@
-f<template>
+<template>
   <section class="skills">
     <h2>My Skills</h2>
     <div class="skill-list">

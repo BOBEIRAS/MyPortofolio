@@ -24,7 +24,7 @@
 .about {
   max-width: 800px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem;  
   background-color: #0f0f0f;
   color: #e0e0e0;
   font-family: 'Orbitron', sans-serif;
@@ -71,4 +71,6 @@ a {
 a:hover {
   text-decoration: underline;
 }
+
+
 </style>
