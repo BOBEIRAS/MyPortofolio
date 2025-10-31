@@ -4,11 +4,11 @@
     <form @submit.prevent="submitForm">
       <input v-model="form.name" type="text" placeholder="Name" required>
       <input v-model="form.email" type="email" placeholder="Email" required>
-      <textarea v-model="form.message" placeholder="Message" required></textarea>
+      <textarea v-model="form.message" placeholder="Still in delevopement" required></textarea>
       <button type="submit">Send</button>
     </form>
-    <p>Email: your.email@example.com</p>
-    <p>LinkedIn: <a href="#">Your LinkedIn</a></p>
+    <p>Email: rok.jamesholiday@gmail.com</p>
+    <p>Discord: <a href="#"> 0.0.8</a></p>
   </section>
 </template>
 

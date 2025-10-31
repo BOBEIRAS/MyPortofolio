@@ -1,5 +1,9 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'  // Importa os componetes do router
+import { useViewCounter } from './composables/useViewCounter.js'
+
+
+const { viewCount, isLoading } = useViewCounter()
 </script>
 
 <template>
@@ -11,10 +15,15 @@ import { RouterLink, RouterView } from 'vue-router'  // Importa os componetes do
       <RouterLink to="/projects">Projects</RouterLink>|
       <RouterLink to="/skills">Skills</RouterLink>|
       <RouterLink to="/contact">Contact</RouterLink>
+      <div class="view-counter">
+        <span v-if="isLoading">Loading...</span>
+        <span v-else>Visits: {{ viewCount }}</span>
+      </div>
     </nav>
 
     <!-- Corpo da Página -->
-    <RouterView />
+    <RouterView class="router-view" />
+
   </div>
 </template>
 
@@ -44,5 +53,15 @@ nav a:hover {
   color: #ff0055;
   font-weight: bold;
   text-shadow: 0 0 10px #ff0080;
+}
+
+.view-counter {
+  display: inline-block;
+  margin-left: 2rem;
+  color: #ff0080;
+  font-size: 0.9rem;
+  font-weight: normal;
+  text-transform: none;
+  letter-spacing: normal;
 }
 </style>

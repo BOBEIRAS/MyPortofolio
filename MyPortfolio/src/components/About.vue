@@ -1,16 +1,16 @@
 <template>
   <section class="about">
-    <h2>About Me</h2>
+    <h2 class="fade-in">About Me</h2>
     <div class="profile-container">
-      <img class="profile-pic" src="@/components/icons/pfp.jpeg" alt="Profile Picture" />
-      <div class="about-text">
+      <img class="profile-pic slide-in-left glow" src="@/components/icons/pfp.jpeg" alt="Profile Picture" />
+      <div class="about-text slide-in-right">
         <p>Why me? I am a student of <strong>Management and Programming of Information Systems</strong>,
           passionate about technology, problem-solving, and continuous learning.</p>
         <p>I enjoy working with programming, databases, and IT systems management,
           and I am always looking for opportunities to improve my skills and gain
           hands-on experience.</p>
         <p><strong>Education:</strong>  Course in Management and Programming of Information Systems (GPSI) –<a href="https://site.ae-salvaterra.pt/">GPSI</a>, 2024-2025</p>
-        <p><strong>Experience:</strong> 
+        <p><strong>Experience:</strong>
            Personal projects in web development and system programming
         </p>
       </div>
